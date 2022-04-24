@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:text="Enter URL:"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="109dp"
+        android:text="http://"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/edittext_source"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="25dp"
+        android:ellipsize="middle"
+        android:ems="10"
+        android:hint="www.example.com"
+        android:singleLine="true"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/button_get"
+        android:layout_width="204dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="173dp"
+        android:background="#56B2FB"
+        android:text="GET PAGE SOURCE"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scr_result"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="33dp"
+        android:scrollbarSize="15dp"
+        android:scrollbarThumbVertical="@color/purple_200"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textview_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="#51A8ED"
+            android:text="Page source will appear here"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/my_border"/>
+    </ScrollView>
+
+</RelativeLayout>
